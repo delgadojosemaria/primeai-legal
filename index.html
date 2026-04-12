@@ -16,11 +16,22 @@
       max-width: 720px;
       margin: 0 auto;
     }
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .header img {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      flex-shrink: 0;
+    }
     h1 {
       font-size: 34px;
       font-weight: 700;
       color: #fff;
-      margin-bottom: 8px;
     }
     .meta {
       font-size: 13px;
@@ -42,11 +53,15 @@
       margin-top: 6px;
     }
     li { margin-bottom: 4px; }
+    a { color: #6161f8; }
   </style>
 </head>
 <body>
 
-<h1>Privacy Policy</h1>
+<div class="header">
+  <img src="icon.png" alt="My Prime AI icon" />
+  <h1>Privacy Policy</h1>
+</div>
 <p class="meta">Last updated: April 2026</p>
 
 <h2>Introduction</h2>
@@ -99,7 +114,7 @@
 
 <h2>Contact Us</h2>
 <p>If you have any questions about this Privacy Policy, please contact us at:<br>
-<a href="mailto:support@myprimeai.app" style="color:#6161f8">support@myprimeai.app</a></p>
+<a href="mailto:support@myprimeai.app">support@myprimeai.app</a></p>
 
 </body>
 </html>
